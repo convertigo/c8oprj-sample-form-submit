@@ -1,6 +1,6 @@
 ↑convertigo: 8.1.0.m006
 ↓form_submit [core.Project]: 
-  comment: Convertigo NGX builder Project
+  comment: How to programatically reset form inputs data and control submit response
   corsOrigin: =Origin
   version: 1.0
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml

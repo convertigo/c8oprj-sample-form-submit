@@ -3,7 +3,7 @@
 
 # form_submit
 
-Convertigo NGX builder Project
+How to programatically reset form inputs data and control submit response
 
 
 For more technical informations : [documentation](./project.md)
@@ -27,13 +27,13 @@ For more technical informations : [documentation](./project.md)
      <tr><td>To contribute</td><td>
 
      ```
-     form_submit=C:/Convertigo/Studio 8.2.3/workspace/form_submit/.git:branch=master
+     form_submit=https://github.com/convertigo/c8oprj-sample-form-submit.git:branch=master
      ```
      </td></tr>
      <tr><td>To simply use</td><td>
 
      ```
-     form_submit=C:/Convertigo/Studio 8.2.3/workspace/form_submit//archive/master.zip
+     form_submit=https://github.com/convertigo/c8oprj-sample-form-submit/archive/master.zip
      ```
      </td></tr>
     </table>

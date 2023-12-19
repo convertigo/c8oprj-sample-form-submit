@@ -1,7 +1,7 @@
 
 # ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/core/images/project_color_16x16.png?raw=true "Project") form_submit
 
-Convertigo NGX builder Project
+How to programatically reset form inputs data and control submit response
 
 <details><summary><span style="color:DarkGoldenRod"><i>References</i></span></summary><blockquote><p>
 
