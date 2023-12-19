@@ -2,12 +2,18 @@
 ↓form_submit [core.Project]: 
   comment: Convertigo NGX builder Project
   corsOrigin: =Origin
+  version: 1.0
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
+  ↓insert_new_people [sequences.GenericSequence]: 🗏 sequences/insert_new_people.yaml
+  ↓peopleGendersList [sequences.GenericSequence]: 🗏 sequences/peopleGendersList.yaml
+  ↓peopleHobbiesList [sequences.GenericSequence]: 🗏 sequences/peopleHobbiesList.yaml
+  ↓no_code_database_reference [references.ProjectSchemaReference]: 
+    projectName: no_code_database
   ↓Project_reference [references.ProjectSchemaReference]: 
     comment: ngx builder template
     projectName: mobilebuilder_tpl_8_1_0_ngx=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_8_1_0_ngx.zip
   ↓Application [core.MobileApplication]: 
-    comment: Describes the mobile application global properties
+    comment: Form submit reset inputs and control response
     splashRemoveMode: beforeUpdate
     ↓Android [mobileplatforms.Android]: 
       comment: Android platform

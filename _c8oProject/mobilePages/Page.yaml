@@ -1,5 +1,5 @@
 ↑isRoot: true
-comment: My First Page as root page
+comment: Form submit
 preloadPriority: high
 scriptContent: 
   - xmlizable: 
@@ -15,39 +15,39 @@ scriptContent:
         /*Begin_c8o_PageFunction*/
         	/*End_c8o_PageFunction*/
         
-segment: path-to-xfirst
-title: First page
-↓Header [ngx.components.UIDynamicElement-1491634212350]: 
+segment: path-to-page
+title: Title for Page
+↓Header [ngx.components.UIDynamicElement-1702977587015]: 
   beanData: '{"ionBean":"Header"}'
   comment: Page header
   tagName: ion-header
-  ↓ToolBar [ngx.components.UIDynamicElement-1491634231108]: 
+  ↓ToolBar [ngx.components.UIDynamicElement-1702977587018]: 
     beanData: '{"ionBean":"ToolBar"}'
     tagName: ion-toolbar
-    ↓ButtonSet1 [ngx.components.UIDynamicElement-1588171103814]: 
+    ↓ButtonSet1 [ngx.components.UIDynamicElement-1702977587021]: 
       beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:start"}'
       tagName: ion-buttons
-      ↓BackButton [ngx.components.UIDynamicElement-1643993281257]: 
+      ↓BackButton [ngx.components.UIDynamicElement-1702977587024]: 
         beanData: '{"ionBean":"BackButton"}'
         tagName: ion-back-button
-      ↓MenuButton [ngx.components.UIDynamicElement-1588172846908]: 
+      ↓MenuButton [ngx.components.UIDynamicElement-1702977587027]: 
         beanData: '{"ionBean":"MenuButton"}'
         tagName: ion-menu-button
-    ↓BarTitle [ngx.components.UIDynamicElement-1491634265317]: 
+    ↓BarTitle [ngx.components.UIDynamicElement-1702977587030]: 
       beanData: '{"ionBean":"BarTitle"}'
       tagName: ion-title
-      ↓Text [ngx.components.UIText-1491634275121]: 
+      ↓Text [ngx.components.UIText-1702977587033]: 
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: plain:Page
-    ↓ButtonSet2 [ngx.components.UIDynamicElement-1588170811054]: 
+    ↓ButtonSet2 [ngx.components.UIDynamicElement-1702977587036]: 
       beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:end"}'
       tagName: ion-buttons
-      ↓Button [ngx.components.UIDynamicElement-1588170817806]: 
+      ↓Button [ngx.components.UIDynamicElement-1702977587039]: 
         beanData: '{"ionBean":"Button"}'
         tagName: ion-button
-        ↓Icon [ngx.components.UIDynamicElement-1588170831166]: 
+        ↓Icon [ngx.components.UIDynamicElement-1702977587042]: 
           beanData: |
             '{
              "ionBean": "Icon",
@@ -56,36 +56,210 @@ title: First page
              "IconIosName": "plain"
             }'
           tagName: ion-icon
-↓Content [ngx.components.UIDynamicElement-1489674805352]: 
+↓Content [ngx.components.UIDynamicElement-1702977587045]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
-↓Footer [ngx.components.UIDynamicElement-1491634242460]: 
+  ↓Div [ngx.components.UIDynamicElement-1702977587048]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+  ↓tag [ngx.components.UIForm-1702977587051]: 
+    identifier: formSample
+    ↓FormItem [ngx.components.UIDynamicElement-1702977587054]: 
+      beanData: '{"ionBean":"FormItem"}'
+      tagName: ion-item
+      ↓Label [ngx.components.UIDynamicElement-1702977587057]: 
+        beanData: '{"ionBean":"Label"}'
+        tagName: ion-label
+        ↓some_text [ngx.components.UIText-1702977587060]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:firstname
+      ↓TextInput [ngx.components.UIDynamicElement-1702977587063]: 
+        beanData: |
+          '{
+           "ionBean": "Input",
+           "ControlName": "plain:field_firstname",
+           "Debounce": "plain:0"
+          }'
+        tagName: ion-input
+    ↓FormItem1 [ngx.components.UIDynamicElement-1702977587066]: 
+      beanData: '{"ionBean":"FormItem"}'
+      tagName: ion-item
+      ↓Label [ngx.components.UIDynamicElement-1702977587069]: 
+        beanData: '{"ionBean":"Label"}'
+        tagName: ion-label
+        ↓some_text [ngx.components.UIText-1702977587072]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:lastname
+      ↓TextInput [ngx.components.UIDynamicElement-1702977587075]: 
+        beanData: |
+          '{
+           "ionBean": "Input",
+           "ControlName": "plain:field_lastname",
+           "Debounce": "plain:0"
+          }'
+        tagName: ion-input
+    ↓FormItem2 [ngx.components.UIDynamicElement-1702977587078]: 
+      beanData: '{"ionBean":"FormItem"}'
+      tagName: ion-item
+      ↓Label [ngx.components.UIDynamicElement-1702977587081]: 
+        beanData: '{"ionBean":"Label"}'
+        tagName: ion-label
+        ↓some_text [ngx.components.UIText-1702977587084]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:gender
+      ↓SelectContainer [ngx.components.UIDynamicElement-1702977587087]: 
+        beanData: '{"ionBean":"Select","ControlName":"plain:field_gender"}'
+        tagName: ion-select
+        ↓tag [ngx.components.UIControlDirective-1702977587090]: 
+          directiveSource: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"form_submit","input":"","model":{"data":[{"sequence":"form_submit.peopleGendersList","marker":"genders"}],"path":"?.genders","prefix":"","suffix":"","custom":"","useCustom":false}}
+          ↓SelectOption [ngx.components.UIDynamicElement-1702977587093]: 
+            beanData: '{"ionBean":"SelectOption","Value":"source:{\"filter\":\"Iteration\",\"project\":\"form_submit\",\"input\":\"\",\"model\":{\"data\":[{\"priority\":1702977587090}],\"path\":\"?.id\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}"}'
+            tagName: ion-select-option
+            ↓Female [ngx.components.UIText-1702977587096]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Iteration","project":"form_submit","input":"","model":{"data":[{"priority":1702977587090}],"path":"?.label","prefix":"","suffix":"","custom":"","useCustom":false}}
+    ↓FormItem3 [ngx.components.UIDynamicElement-1702977587099]: 
+      beanData: '{"ionBean":"FormItem"}'
+      tagName: ion-item
+      ↓Label [ngx.components.UIDynamicElement-1702977587102]: 
+        beanData: '{"ionBean":"Label"}'
+        tagName: ion-label
+        ↓some_text [ngx.components.UIText-1702977587105]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:hobbies
+      ↓SelectContainer [ngx.components.UIDynamicElement-1702982208742]: 
+        beanData: |
+          '{
+           "ionBean": "Select",
+           "ControlName": "plain:field_hobbies",
+           "Multiple": "plain:true"
+          }'
+        tagName: ion-select
+        ↓tag [ngx.components.UIControlDirective-1702982226231]: 
+          directiveSource: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"form_submit","input":"","model":{"data":[{"sequence":"form_submit.peopleHobbiesList","marker":"hobbies"}],"path":"?.hobbies","prefix":"","suffix":"","custom":"","useCustom":false}}
+          ↓SelectOption [ngx.components.UIDynamicElement-1702982257701]: 
+            beanData: '{"ionBean":"SelectOption","Value":"source:{\"filter\":\"Iteration\",\"project\":\"form_submit\",\"input\":\"\",\"model\":{\"data\":[{\"priority\":1702982226231}],\"path\":\"?.id\",\"prefix\":\"\",\"suffix\":\"\",\"custom\":\"\",\"useCustom\":false}}"}'
+            tagName: ion-select-option
+            ↓some_text [ngx.components.UIText-1702982303661]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Iteration","project":"form_submit","input":"","model":{"data":[{"priority":1702982226231}],"path":"?.label","prefix":"","suffix":"","custom":"","useCustom":false}}
+    ↓SubmitButton [ngx.components.UIDynamicElement-1702977587120]: 
+      beanData: '{"ionBean":"SubmitButton"}'
+      tagName: ion-button
+      ↓some_text [ngx.components.UIText-1702977587123]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Submit
+    ↓ResetButton [ngx.components.UIDynamicElement-1702977587126]: 
+      beanData: '{"ionBean":"ResetButton"}'
+      tagName: ion-button
+      ↓some_text [ngx.components.UIText-1702977587129]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Reset
+    ↓attr [ngx.components.UIControlEvent-1702977587132]: 
+      attrName: (ngSubmit)
+      eventName: onSubmit
+      ↓CallSequence [ngx.components.UIDynamicAction-1702981912244]: 
+        beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:form_submit.insert_new_people"}'
+        tagName: CallSequence
+        ↓IfElse [ngx.components.UIDynamicIf-1702981924300]: 
+          beanData: '{"ionBean":"IfElseAction","condition":"script:!parent.out.error"}'
+          tagName: IfElse
+          ↓Toast [ngx.components.UIDynamicAction-1702981954365]: 
+            beanData: |
+              '{
+               "ionBean": "ToastAction",
+               "IonColor": "plain:secondary",
+               "message": "plain:Data successfully processed",
+               "duration": "plain:1500"
+              }'
+            tagName: Toast
+            ↓reset_form [ngx.components.UICustomAction-1702982590816]: 
+              actionValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                  - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                    →: |
+                      '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                      		event.srcElement.reset();
+                      		resolve();
+                      '
+          ↓Else_Handler [ngx.components.UIActionElseEvent-1702981933992]: 
+            ↓Alert [ngx.components.UIDynamicAction-1702981979359]: 
+              beanData: |
+                '{
+                 "ionBean": "AlertAction",
+                 "message": "plain:An error occured",
+                 "button1": "plain:CANCEL",
+                 "button2": "plain:OK",
+                 "cancel1": "plain:cancel"
+                }'
+              tagName: Alert
+↓Footer [ngx.components.UIDynamicElement-1702977587171]: 
   beanData: '{"ionBean":"Footer"}'
   comment: Page footer
   tagName: ion-footer
-  ↓ToolBar [ngx.components.UIDynamicElement-1491634317538]: 
+  ↓ToolBar [ngx.components.UIDynamicElement-1702977587174]: 
     beanData: '{"ionBean":"ToolBar"}'
     tagName: ion-toolbar
-    ↓ButtonSet [ngx.components.UIDynamicElement-1588170246138]: 
+    ↓ButtonSet [ngx.components.UIDynamicElement-1702977587177]: 
       beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:start"}'
       tagName: ion-buttons
-      ↓Button1 [ngx.components.UIDynamicElement-1491634332730]: 
+      ↓Button1 [ngx.components.UIDynamicElement-1702977587180]: 
         beanData: '{"ionBean":"Button"}'
         tagName: ion-button
-        ↓Text [ngx.components.UIText-1491634340354]: 
+        ↓Text [ngx.components.UIText-1702977587183]: 
           textValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:Action 1
-    ↓ButtonSet1 [ngx.components.UIDynamicElement-1588170269871]: 
+    ↓ButtonSet1 [ngx.components.UIDynamicElement-1702977587186]: 
       beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:end"}'
       tagName: ion-buttons
-      ↓Button2 [ngx.components.UIDynamicElement-1491634376874]: 
+      ↓Button2 [ngx.components.UIDynamicElement-1702977587189]: 
         beanData: '{"ionBean":"Button"}'
         tagName: ion-button
-        ↓Text [ngx.components.UIText-1491634383107]: 
+        ↓Text [ngx.components.UIText-1702977587192]: 
           textValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:Action 2
+↓PageEvent [ngx.components.UIPageEvent-1702977587195]: 
+  ↓CallSequence [ngx.components.UIDynamicAction-1702977587198]: 
+    beanData: |
+      '{
+       "ionBean": "CallSequenceAction",
+       "requestable": "plain:form_submit.peopleHobbiesList",
+       "marker": "plain:hobbies"
+      }'
+    tagName: CallSequence
+  ↓CallSequence1 [ngx.components.UIDynamicAction-1702977587201]: 
+    beanData: |
+      '{
+       "ionBean": "CallSequenceAction",
+       "requestable": "plain:form_submit.peopleGendersList",
+       "marker": "plain:genders"
+      }'
+    tagName: CallSequence1

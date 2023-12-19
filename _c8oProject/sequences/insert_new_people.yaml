@@ -1,0 +1,6 @@
+↓inputVars [steps.InputVariablesStep-1702981884166]: 
+  output: true
+↓field_firstname [variables.RequestableVariable-1702981780011]: 
+↓field_lastname [variables.RequestableVariable-1702981789454]: 
+↓field_gender [variables.RequestableVariable-1702981822766]: 
+↓field_hobbies [variables.RequestableMultiValuedVariable-1702981858049]: 
