@@ -181,13 +181,13 @@ title: Title for Page
     ↓attr [ngx.components.UIControlEvent-1702977587132]: 
       attrName: (ngSubmit)
       eventName: onSubmit
-      ↓CallSequence [ngx.components.UIDynamicAction-1702981912244]: 
+      ↓CallSequence [ngx.components.UIDynamicAction-1703070642384]: 
         beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:form_submit.insert_new_people"}'
         tagName: CallSequence
-        ↓IfElse [ngx.components.UIDynamicIf-1702981924300]: 
+        ↓IfElse [ngx.components.UIDynamicIf-1703070642387]: 
           beanData: '{"ionBean":"IfElseAction","condition":"script:!parent.out.error"}'
           tagName: IfElse
-          ↓Toast [ngx.components.UIDynamicAction-1702981954365]: 
+          ↓Toast [ngx.components.UIDynamicAction-1703070642390]: 
             beanData: |
               '{
                "ionBean": "ToastAction",
@@ -196,18 +196,18 @@ title: Title for Page
                "duration": "plain:1500"
               }'
             tagName: Toast
-            ↓reset_form [ngx.components.UICustomAction-1702982590816]: 
+            ↓reset_form [ngx.components.UICustomAction-1703070642393]: 
               actionValue: 
                 - xmlizable: 
                   - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
                   - com.twinsoft.convertigo.beans.common.FormatedContent: 
                     →: |
                       '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
-                      		event.srcElement.reset();
+                      		event.target.reset();
                       		resolve();
                       '
-          ↓Else_Handler [ngx.components.UIActionElseEvent-1702981933992]: 
-            ↓Alert [ngx.components.UIDynamicAction-1702981979359]: 
+          ↓Else_Handler [ngx.components.UIActionElseEvent-1703070642396]: 
+            ↓Alert [ngx.components.UIDynamicAction-1703070642399]: 
               beanData: |
                 '{
                  "ionBean": "AlertAction",
@@ -217,6 +217,24 @@ title: Title for Page
                  "cancel1": "plain:cancel"
                 }'
               tagName: Alert
+        ↓field_lastname [ngx.components.UIControlVariable-1703070657454]: 
+          comment: new variable
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Form","project":"form_submit","input":"","model":{"data":[{"priority":1702977587051,"identifier":"formSample"}],"path":"?.controls['field_lastname']?.value","prefix":"","suffix":"?.toUpperCase()","custom":"","useCustom":false}}
+        ↓field_gender [ngx.components.UIControlVariable-1703070657456]: 
+          comment: new variable
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Form","project":"form_submit","input":"","model":{"data":[{"priority":1702977587051,"identifier":"formSample"}],"path":"?.controls['field_gender']?.value","prefix":"","suffix":"","custom":"","useCustom":false}}
+        ↓field_hobbies [ngx.components.UIControlVariable-1703070657458]: 
+          comment: new variable
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Form","project":"form_submit","input":"","model":{"data":[{"priority":1702977587051,"identifier":"formSample"}],"path":"?.controls['field_hobbies']?.value","prefix":"JSON.stringify(","suffix":".map(x=>+x))","custom":"","useCustom":false}}
 ↓Footer [ngx.components.UIDynamicElement-1702977587171]: 
   beanData: '{"ionBean":"Footer"}'
   comment: Page footer

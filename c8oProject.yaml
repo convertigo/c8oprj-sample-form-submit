@@ -2,7 +2,7 @@
 ↓form_submit [core.Project]: 
   comment: How to programatically reset form inputs data and control submit response
   corsOrigin: =Origin
-  version: 1.0
+  version: 1.1
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
   ↓insert_new_people [sequences.GenericSequence]: 🗏 sequences/insert_new_people.yaml
   ↓peopleGendersList [sequences.GenericSequence]: 🗏 sequences/peopleGendersList.yaml
